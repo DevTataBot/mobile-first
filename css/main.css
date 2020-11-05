@@ -130,12 +130,24 @@ main{
     line-height: 1.6rem;
     color: #757575;
 }
+.main-tables-container{
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    margin: 0 40px;
+}
+.main-currency-table .main-comision-table{
+    scroll-snap-align: center;
+}
 .main-currency-table{
     width: 70%;
     min-width: 235px;
     max-width: 500px;
     height: 360px;
     margin: 0 auto;
+    margin-right: 30px; 
     font-family: 'Inter', sans-serif;
 }
 .main-currency-table .currency-table--title{
